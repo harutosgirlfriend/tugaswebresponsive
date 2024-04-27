@@ -164,4 +164,7 @@ body{
             order: 3;
             flex-direction: column;
         }
+        .jeli1{
+            text-align: right;
+        }
     }
