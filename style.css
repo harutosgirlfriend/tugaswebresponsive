@@ -165,6 +165,7 @@ body{
             flex-direction: column;
         }
         .jeli1{
+            width: 200px;
             text-align: right;
         }
     }
