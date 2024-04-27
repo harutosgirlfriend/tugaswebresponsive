@@ -1,0 +1,167 @@
+body{
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.wrapper{
+    background: url(jellyaes.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+
+    border-radius: 10px;
+    flex: 1 100%;
+
+}
+.tambah{
+    
+    background-size: cover;
+    backdrop-filter: blur(40px);
+    display: flex;
+}
+.tambah > * {
+   
+     flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+ 
+}
+.main2{
+    background: rgb(212, 216, 216);
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    background-image: url(jelly.fishbanyak.jpeg);
+    background-size: cover;
+    height: 300px;
+}
+.jeli{
+    padding-top: 20px;
+   text-align: left;
+    display: flex;
+
+}
+
+
+.header > *{
+    color: rgb(203, 232, 240);
+    flex:  100%;
+}
+.nav{
+  
+    
+  background: transparent;
+    height:80px ;
+}
+.footer{
+   
+   background: transparent;
+    height:80px ;
+   
+    
+}
+
+
+.main{
+    background: transparent;
+    padding:10px;
+    text-align: center;
+    
+}
+.jeli1{
+    
+    border-radius: 50px 5px 50px 5px;
+    
+
+
+    
+}
+.aside1{
+    
+    text-align: right;
+  
+}
+.baris{background: transparent;
+   
+    height: 150px;
+}
+.baris p{
+    
+   
+    background: rgb(203, 232, 240);
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+
+/* tampilan responsif */
+@media all and ( min-width :800px){
+    .main{
+        flex: 50% ;
+    }
+    .aside1{
+        order: 2 ;
+    }
+    .main{
+        order:1;
+    }
+    .tambah{
+        order: 3;
+    }
+    .footer{
+        order:5;
+    }
+    .baris{
+        flex: 1;
+    }
+   
+}
+    
+    @media all and (min-width:600px){
+        
+        .footer{
+            order:5;
+        }
+        .aside1{
+            flex:4;
+        }
+    }
+
+    @media all and (max-width:800px){
+        .tambah{
+            height: 150px;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll ;
+            
+        }
+        .baris{
+           
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           scroll-snap-align: start;
+        }
+        .footer{
+            
+            margin-bottom: 10px;
+           
+        }
+        .nav{
+            order:1;
+        }
+        .footer{
+            order: 6;
+        }
+        .tambah{
+            order: 3;
+            flex-direction: column;
+        }
+    }
